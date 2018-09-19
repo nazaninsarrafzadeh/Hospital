@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Illness.IllnessOrjans"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <Button
+        android:id="@+id/btn_MS"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:alpha="0.5"
+        android:background="@android:color/holo_blue_dark"
+        android:text="ام اس"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_tashanojNorology"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:alpha="0.5"
+        android:background="@android:color/holo_blue_dark"
+        android:text="تشنج"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_MS" />
+
+    <Button
+        android:id="@+id/btn_sekteMaghziNorology"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:alpha="0.5"
+        android:background="@android:color/holo_blue_dark"
+        android:text="سکته مغزی"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_tashanojNorology" />
+
+    <Button
+        android:id="@+id/btn_gilen"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:alpha="0.5"
+        android:background="@android:color/holo_blue_dark"
+        android:text="گیلن باره"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sekteMaghziNorology" />
+
+    <Button
+        android:id="@+id/btn_miasteni"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:alpha="0.5"
+        android:background="@android:color/holo_blue_dark"
+        android:text="میاستنی گراو"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_gilen" />
+
+</android.support.constraint.ConstraintLayout>

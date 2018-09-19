@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Illness.IllnessOrjans"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <Button
+        android:id="@+id/btn_artrit"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:alpha="0.5"
+        android:background="@android:color/holo_blue_dark"
+        android:text="آرتریت روماتوئید"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_kron"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:alpha="0.5"
+        android:background="@android:color/holo_blue_dark"
+        android:text="کرون"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_artrit" />
+
+    <Button
+        android:id="@+id/btn_khunriziGovareshi"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:alpha="0.5"
+        android:background="@android:color/holo_blue_dark"
+        android:text="خونریزی گوارشی"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_kron" />
+
+    <Button
+        android:id="@+id/btn_diabet"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:alpha="0.5"
+        android:background="@android:color/holo_blue_dark"
+        android:text="دیابت"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_khunriziGovareshi" />
+
+    <Button
+        android:id="@+id/btn_sekteGhalbiFogh"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:alpha="0.5"
+        android:background="@android:color/holo_blue_dark"
+        android:text="سکته قلبی"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_diabet" />
+
+    <Button
+        android:id="@+id/btn_siruz"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:alpha="0.5"
+        android:background="@android:color/holo_blue_dark"
+        android:text="سیروز کبدی"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sekteGhalbiFogh" />
+
+</android.support.constraint.ConstraintLayout>

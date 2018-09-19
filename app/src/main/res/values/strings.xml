@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Hospital</string>
+    <string name="title_drugs">دارو ها</string>
+    <string name="title_illness">بیماری ها</string>
+    <string name="title_rig">تجهیزات</string>
+    <string name="title_info">درباره ما</string>
+    <string name="title_paraclinic">پاراکلینیکی</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

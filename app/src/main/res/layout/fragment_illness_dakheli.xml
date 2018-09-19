@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Illness.IllnessOrjans"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <Button
+        android:id="@+id/btn_asm"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:alpha="0.5"
+        android:background="@android:color/holo_blue_dark"
+        android:text="آسم"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_ensedad"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:alpha="0.5"
+        android:background="@android:color/holo_blue_dark"
+        android:text="انسداد مزمن ریوی"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_asm" />
+
+    <Button
+        android:id="@+id/btn_penomoniDakheli"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:alpha="0.5"
+        android:background="@android:color/holo_blue_dark"
+        android:text="پنومونی"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ensedad" />
+
+    <Button
+        android:id="@+id/btn_khunrizi"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:alpha="0.5"
+        android:background="@android:color/holo_blue_dark"
+        android:text="خونریزی گوارشی"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_penomoniDakheli" />
+
+    <Button
+        android:id="@+id/btn_kamKhuni"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:alpha="0.5"
+        android:background="@android:color/holo_blue_dark"
+        android:text="کم خونی فقر آهن"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_khunrizi" />
+
+    <Button
+        android:id="@+id/btn_gastrit"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:alpha="0.5"
+        android:background="@android:color/holo_blue_dark"
+        android:text="گاستریت"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_kamKhuni" />
+</android.support.constraint.ConstraintLayout>

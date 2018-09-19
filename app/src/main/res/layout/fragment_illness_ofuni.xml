@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Illness.IllnessOrjans"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <Button
+        android:id="@+id/btnPenomoniOfuni"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:alpha="0.5"
+        android:background="@android:color/holo_blue_dark"
+        android:text="پنومونی"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_tabeMalt"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:alpha="0.5"
+        android:background="@android:color/holo_blue_dark"
+        android:text="تب مالت"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPenomoniOfuni" />
+
+    <Button
+        android:id="@+id/btn_sel"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:alpha="0.5"
+        android:background="@android:color/holo_blue_dark"
+        android:text="سل"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_tabeMalt" />
+
+    <Button
+        android:id="@+id/btn_ofunatEdradi"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:alpha="0.5"
+        android:background="@android:color/holo_blue_dark"
+        android:text="عفونت ادراری"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sel" />
+
+    <Button
+        android:id="@+id/btn_gastro"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:alpha="0.5"
+        android:background="@android:color/holo_blue_dark"
+        android:text="گاسترو آنتریت"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ofunatEdradi" />
+
+</android.support.constraint.ConstraintLayout>
