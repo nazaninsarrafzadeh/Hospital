@@ -21,7 +21,7 @@ import com.example.nazanin.hospitalapp.Illness.Illnesses;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class MainActivity extends AppCompatActivity{
-  //  ActionBar actionBar;
+
     private Toolbar toolbar;
     private ImageButton backButton;
 
@@ -33,14 +33,12 @@ public class MainActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        BottomNavigationView bottomNavigationView = (BottomNavigationView)
+        BottomNavigationView bottomNavigationView =
                 findViewById(R.id.navigation);
         toolbar=findViewById(R.id.home_toolbar);
         backButton=findViewById(R.id.backButton);
         backButton.setVisibility(View.INVISIBLE);
 
-//        actionBar = getSupportActionBar();
-//        actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#00527f")));
         //disable app name
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
