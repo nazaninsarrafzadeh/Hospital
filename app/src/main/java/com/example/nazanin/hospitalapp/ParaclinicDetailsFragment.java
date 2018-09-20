@@ -1,4 +1,5 @@
-package com.example.nazanin.hospitalapp.Illness;
+package com.example.nazanin.hospitalapp;
+
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -8,11 +9,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.nazanin.hospitalapp.R;
 
 
-public class InfoIllness extends Fragment {
-
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class ParaclinicDetailsFragment extends Fragment {
 
     String _strT;
     String _strB;
@@ -37,37 +39,33 @@ public class InfoIllness extends Fragment {
         this._strB = para;
     }
 
-    IllnessOrjans illnessOrjansFragment;
+    private Paraclinic paraclinic;
     public TextView strLblTitle;
     public TextView strLblBody;
 
-    public static InfoIllness newInstance(String param1, String param2) {
-        InfoIllness fragment = new InfoIllness();
+    public ParaclinicDetailsFragment() {
+        // Required empty public constructor
+    }
+
+    public static ParaclinicDetailsFragment newInstance(String param1, String param2) {
+        ParaclinicDetailsFragment fragment = new ParaclinicDetailsFragment();
 
 
         return fragment;
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-
-    }
-
-    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-        illnessOrjansFragment = new IllnessOrjans();
+        paraclinic=new Paraclinic();
         transaction.commit();
 
-        View v= inflater.inflate(R.layout.fragment_illness_info, container, false);
-       strLblBody = (TextView) v.findViewById(R.id.lblBody);
-       strLblTitle = (TextView) v.findViewById(R.id.lblTitle);
-       strLblBody.setText(GetBody());
-       strLblTitle.setText(GetTitle());
+        View v= inflater.inflate(R.layout.fragment_paraclinic_details, container, false);
+        strLblBody = (TextView) v.findViewById(R.id.lblBody);
+        strLblTitle = (TextView) v.findViewById(R.id.lblTitle);
+        strLblBody.setText(GetBody());
+        strLblTitle.setText(GetTitle());
 
         return v;
     }
