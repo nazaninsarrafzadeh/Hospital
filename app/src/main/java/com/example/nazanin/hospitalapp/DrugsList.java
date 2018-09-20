@@ -319,7 +319,7 @@ public class DrugsList extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_drugs_list, container, false);
         ListView lv = (ListView)v.findViewById(R.id.lvDrugs);
-
+        sortAlephabetically();
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1,list);
         lv.setAdapter(arrayAdapter);
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -350,6 +350,10 @@ public class DrugsList extends Fragment {
             }
         });
         return v;
+    }
+
+    private void sortAlephabetically(){
+
     }
 
 }

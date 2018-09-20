@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity{
 
     private Toolbar toolbar;
     private ImageButton backButton;
+    private android.support.v4.app.FragmentManager fm;
 
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
@@ -38,10 +39,15 @@ public class MainActivity extends AppCompatActivity{
         toolbar=findViewById(R.id.home_toolbar);
         backButton=findViewById(R.id.backButton);
         backButton.setVisibility(View.INVISIBLE);
+        fm = getSupportFragmentManager();
 
         //disable app name
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
+        if (fm.getBackStackEntryCount()>0) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+
         toolbar.setTitle("داروها");
 
         bottomNavigationView.setOnNavigationItemSelectedListener
@@ -51,28 +57,28 @@ public class MainActivity extends AppCompatActivity{
                         Fragment selectedFragment = null;
                         switch (item.getItemId()) {
 
-                case R.id.navigation_drugs:
-                    toolbar.setTitle("داروها");
-                    selectedFragment = Drugs.newInstance();
-                    break;
+                            case R.id.navigation_drugs:
+                                toolbar.setTitle("داروها");
+                                selectedFragment = Drugs.newInstance();
+                                break;
 
-                case R.id.navigation_illness:
-                    toolbar.setTitle("بیماری ها");
-                    selectedFragment = Illnesses.newInstance();
-                    break;
-                case R.id.navigation_rig:
-                    toolbar.setTitle("تجهیزات");
-                    selectedFragment = Rigs.newInstance();
-                    break;
+                            case R.id.navigation_illness:
+                                toolbar.setTitle("بیماری ها");
+                                selectedFragment = Illnesses.newInstance();
+                                break;
+                            case R.id.navigation_rig:
+                                toolbar.setTitle("تجهیزات");
+                                selectedFragment = Rigs.newInstance();
+                                break;
 
-                case R.id.navigation_paraclinic:
-                    toolbar.setTitle("پاراکلینیکی");
-                    selectedFragment= Paraclinic.newInstance();
-                    break;
-                case R.id.navigation_info:
-                    toolbar.setTitle("درباره ما");
-                    selectedFragment = AboutUs.newInstance();
-                    break;
+                            case R.id.navigation_paraclinic:
+                                toolbar.setTitle("پاراکلینیکی");
+                                selectedFragment= Paraclinic.newInstance();
+                                break;
+                            case R.id.navigation_info:
+                                toolbar.setTitle("درباره ما");
+                                selectedFragment = AboutUs.newInstance();
+                                break;
                         }
                         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                         transaction.replace(R.id.frame_layout, selectedFragment);
@@ -84,6 +90,7 @@ public class MainActivity extends AppCompatActivity{
 
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.frame_layout, Drugs.newInstance());
+        transaction.addToBackStack(null);
         transaction.commit();
 
 
@@ -111,5 +118,27 @@ public class MainActivity extends AppCompatActivity{
     }
 
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+
+                int backStackCount = fm.getBackStackEntryCount();
+                Toast.makeText(this,String.valueOf(backStackCount),Toast.LENGTH_SHORT).show();
+
+
+                if (backStackCount >0) {
+                    fm.popBackStack();
+
+
+
+                } else if (backStackCount == 0) {
+                    finish();
+                }
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 
 }
