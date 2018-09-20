@@ -4,7 +4,6 @@
 
 
 
-
     <application
         android:name=".FontManager"
         android:allowBackup="true"
@@ -23,14 +22,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".dialogPage"
-            android:theme="@style/AppTheme.CustomTheme"></activity>
+        <activity
+            android:name=".dialogPage"
+            android:theme="@style/AppTheme.CustomTheme" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
-    </application>
 
+        <activity android:name=".dialogPage_2"
+            android:theme="@style/AppTheme.CustomTheme" />
+    </application>
 
 </manifest>

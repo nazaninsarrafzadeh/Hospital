@@ -15,11 +15,23 @@
 
         <TextView
             android:id="@+id/tv"
-            android:textAlignment="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="DrugsName" />
+            android:text="DrugsName"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/rl1"
@@ -31,11 +43,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
-                android:text="دسته دارو:" />
+                android:text="دسته دارو:"
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tv1"
-                android:layout_width="251dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:layout_marginEnd="20dp"
@@ -43,7 +57,6 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:layout_toLeftOf="@+id/lbl1"
                 android:text="TextView" />
         </RelativeLayout>
 
@@ -56,11 +69,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
-                android:text="شکل:" />
+                android:text="شکل:"
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tv2"
-                android:layout_width="277dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:layout_marginEnd="20dp"
@@ -68,7 +83,6 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:layout_toLeftOf="@+id/lbl2"
                 android:text="TextView" />
         </RelativeLayout>
 
@@ -81,11 +95,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
-                android:text="آنتی دوت:" />
+                android:text="آنتی دوت:"
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tv3"
-                android:layout_width="253dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:layout_marginEnd="20dp"
@@ -93,7 +109,6 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:layout_toLeftOf="@+id/lbl3"
                 android:text="TextView" />
         </RelativeLayout>
 
@@ -106,11 +121,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
-                android:text="مکانیسم اثر:" />
+                android:text="مکانیسم اثر:"
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tv4"
-                android:layout_width="242dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:layout_marginEnd="20dp"
@@ -118,7 +135,6 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:layout_toLeftOf="@+id/lbl4"
                 android:text="TextView" />
         </RelativeLayout>
 
@@ -131,11 +147,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
-                android:text="اندیکاسیون:" />
+                android:text="اندیکاسیون:"
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tv5"
-                android:layout_width="244dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:layout_marginEnd="20dp"
@@ -143,7 +161,6 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:layout_toLeftOf="@+id/lbl5"
                 android:text="TextView" />
         </RelativeLayout>
 
@@ -156,11 +173,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
-                android:text="دوز مصرفی:" />
+                android:text="دوز مصرفی:"
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tv6"
-                android:layout_width="242dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:layout_marginEnd="20dp"
@@ -168,7 +187,6 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:layout_toLeftOf="@+id/lbl6"
                 android:text="TextView" />
         </RelativeLayout>
 
@@ -181,11 +199,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
-                android:text="کنتراندیکاسیون:" />
+                android:text="کنتراندیکاسیون:"
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tv7"
-                android:layout_width="223dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:layout_marginEnd="20dp"
@@ -193,7 +213,6 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:layout_toLeftOf="@+id/lbl7"
                 android:text="TextView" />
         </RelativeLayout>
 
@@ -206,11 +225,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
-                android:text="عوارض جانبی:" />
+                android:text="عوارض جانبی:"
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tv8"
-                android:layout_width="231dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:layout_marginEnd="20dp"
@@ -218,7 +239,6 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:layout_toLeftOf="@+id/lbl8"
                 android:text="TextView" />
         </RelativeLayout>
 
@@ -231,11 +251,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
-                android:text="اقدامات پرستاری:" />
+                android:text="اقدامات پرستاری:"
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tv9"
-                android:layout_width="216dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:layout_marginEnd="20dp"
@@ -243,7 +265,6 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:layout_toLeftOf="@+id/lbl9"
                 android:text="Text view " />
         </RelativeLayout>
 

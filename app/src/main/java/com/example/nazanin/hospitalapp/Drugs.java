@@ -53,7 +53,7 @@ public class Drugs extends Fragment {
             @Override
             public void onClick(View v) {
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
-                DrugsList fragment = new DrugsList();
+                DrugsList_2 fragment = new DrugsList_2();
                 transaction.replace(R.id.frame_layout, fragment);
                 transaction.addToBackStack(null);
                 transaction.commit();
