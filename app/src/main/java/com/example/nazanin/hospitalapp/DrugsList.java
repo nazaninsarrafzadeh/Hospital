@@ -14,6 +14,12 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import java.text.Collator;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Locale;
+
 
 public class DrugsList extends Fragment {
 
@@ -319,8 +325,8 @@ public class DrugsList extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_drugs_list, container, false);
         ListView lv = (ListView)v.findViewById(R.id.lvDrugs);
-        sortAlephabetically();
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1,list);
+     //   sortAlephabetically();
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(getContext(), R.layout.list_textview,list);
         lv.setAdapter(arrayAdapter);
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -349,11 +355,21 @@ public class DrugsList extends Fragment {
 
             }
         });
+        showBackButton();
         return v;
     }
 
     private void sortAlephabetically(){
 
+        Collator farsiCollator = Collator.getInstance(new Locale("fa"));
+        Collections.sort(Arrays.asList(list), farsiCollator );
+
+    }
+
+    public void showBackButton() {
+        if (getActivity() instanceof MainActivity) {
+            ((MainActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
     }
 
 }

@@ -47,6 +47,7 @@ public class Illnesses extends Fragment {
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 IllnessOrjans fragment = new IllnessOrjans();
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
