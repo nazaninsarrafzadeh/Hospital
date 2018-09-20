@@ -44,6 +44,7 @@ public class Drugs extends Fragment {
                 FragmentTransaction transaction = getFragmentManager().beginTransaction().addToBackStack(null);
                 DrugsList fragment = new DrugsList();
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
             }
         });
@@ -54,6 +55,7 @@ public class Drugs extends Fragment {
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 DrugsList fragment = new DrugsList();
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
             }
         });

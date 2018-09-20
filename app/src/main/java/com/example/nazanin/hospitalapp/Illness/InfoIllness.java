@@ -62,7 +62,7 @@ public class InfoIllness extends Fragment {
         FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
         illnessOrjansFragment = new IllnessOrjans();
       //  transaction.add(R.id.frame_layout, IllnessOrjans.newInstance());
-        transaction.addToBackStack(null);
+      //  transaction.addToBackStack(null);
         transaction.commit();
 
         View v= inflater.inflate(R.layout.fragment_illness_info, container, false);
