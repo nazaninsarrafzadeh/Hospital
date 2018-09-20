@@ -57,8 +57,15 @@ public class Drugs extends Fragment {
                 transaction.commit();
             }
         });
+        hideBackButton();
 
         return v;
+    }
+
+    public void hideBackButton() {
+        if (getActivity() instanceof MainActivity) {
+            ((MainActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+        }
     }
 
 }

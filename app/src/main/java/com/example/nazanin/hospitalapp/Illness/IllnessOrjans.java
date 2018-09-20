@@ -8,8 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.Toast;
 
 import com.example.nazanin.hospitalapp.MainActivity;
 import com.example.nazanin.hospitalapp.R;
@@ -17,7 +15,7 @@ import com.example.nazanin.hospitalapp.R;
 
 public class IllnessOrjans extends Fragment {
     Button btn1, btn2 , btn3, btn4, btn5, btn6, btn7;
-    private ImageButton backButton;
+
 
 
 
@@ -44,27 +42,11 @@ public class IllnessOrjans extends Fragment {
         btn5 = v.findViewById(R.id.btn_shekameHad);
         btn6 = v.findViewById(R.id.btn_masmumiatOrjans);
         btn7 = v.findViewById(R.id.btn_masmumiatCOorjans);
-        //find back arrow vector asset from mainactivity
-        backButton= ((MainActivity)getActivity()).findViewById(R.id.backButton);
-        backButton.setVisibility(View.VISIBLE);
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //check if backstack is more than 0 close fragment
-
-                int backStackCount = getFragmentManager().getBackStackEntryCount();
-             //   Toast.makeText(getContext(),String.valueOf(backStackCount),Toast.LENGTH_SHORT).show();
-                if (backStackCount >= 1) {
-
-                    getFragmentManager().popBackStack();
-                }
-            }
-        });
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-              FragmentTransaction transaction = getFragmentManager().beginTransaction().addToBackStack(null);
+              FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
               InfoIllness fragment = new InfoIllness();
               fragment.SetTitle("آنژین صدری چیست؟");
               fragment.SetBody("احساس درد و ناراحتی در قفسه سینه می باشد و زمانی رخ می دهد که قلب اکسیژن مورد نیاز خود را دریافت نمی کند. عضله قلب مانند سایر نقاط بدن برای سالم ماندن و فعالیت بهتر و دریافت غذا نیاز به خون رسانی و اکسیژن دارد که این عمل توسط رگهای موجود در قلب به نام شریانهای کرونری انجام می شود به هر علتی که شریانهای قلبی (کرونری) خون کافی دریافت نکنند خون رسانی به عضله قلب کم شده غذا و اکسیژن کافی به آن نمی رسد و فرد دچار درد قلبی می شود که به این درد آنژین صدری می گویند.\n" +
@@ -162,6 +144,7 @@ public class IllnessOrjans extends Fragment {
                       "•\tبیش از 5 دقیقه طول بکشد\n" +
                       "\n");
               transaction.replace(R.id.frame_layout, fragment);
+              transaction.addToBackStack(null);
               transaction.commit();
 
             }
@@ -253,8 +236,15 @@ public class IllnessOrjans extends Fragment {
 
             }
         });
+        showBackButton();
 
         return v;
+    }
+
+    public void showBackButton() {
+        if (getActivity() instanceof MainActivity) {
+            ((MainActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
     }
 
 }
