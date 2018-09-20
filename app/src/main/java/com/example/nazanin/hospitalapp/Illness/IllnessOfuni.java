@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.nazanin.hospitalapp.MainActivity;
 import com.example.nazanin.hospitalapp.R;
 
 
@@ -127,6 +128,7 @@ public class IllnessOfuni extends Fragment {
                         "•\tاز فعالیت بیش از حد در طی دوره بهبودی خودداری کنید و در بین فعالیت دوره هایی از استراحت داشته باشید.\n" +
                         "•\tدر تاریخ معین جهت پیگیری درمان به پزشک مراجعه کنید.\n");
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
@@ -203,6 +205,7 @@ public class IllnessOfuni extends Fragment {
                         "•\tاگر شما یا یکی ازاعضای خانواده تان علائم تب مالت را دارید.\n" +
                         "•\tاگر تب یا سایر علائم مجددا پس از درمان عود کنند.\n");
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
@@ -288,6 +291,7 @@ public class IllnessOfuni extends Fragment {
                         "اصول طب داخلی هاریسون ، بیماری های عفونی (باکتریال) 2015 ، پرستاری داخلی جراحی برونر سودارث بیماری های تنفسی و تبادلات گازی 2012\n" +
                         "•\t\n");
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
@@ -391,6 +395,7 @@ public class IllnessOfuni extends Fragment {
                         "•\tکمبود آگاهی در مورد عوامل مستعد کننده بیمار به عفونت  عود بیماری ، شناخت و پیشگیری از عودف و درمان دارویی\n" +
                         "\n");
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
@@ -462,6 +467,7 @@ public class IllnessOfuni extends Fragment {
                         "- اگر استفراغ\u200C و اسهال\u200C پس\u200C از درمان\u200C مجدداً بازگردند.\n" +
                         "- اگر علایم\u200C کم\u200Cآبی\u200C مثل\u200C خشکی\u200C دهان\u200C، پوست\u200C چروکیده\u200C، تشنگی\u200C زیاد، یا کاهش\u200C ادرار به\u200C وجود آیند. \n");
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
@@ -469,7 +475,13 @@ public class IllnessOfuni extends Fragment {
 
 
 
+        showBackButton();
         return v;
+    }
+    public void showBackButton() {
+        if (getActivity() instanceof MainActivity) {
+            ((MainActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
     }
 
 }

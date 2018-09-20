@@ -59,6 +59,7 @@ public class Illnesses extends Fragment {
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 IllnessEye fragment = new IllnessEye();
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
@@ -70,6 +71,7 @@ public class Illnesses extends Fragment {
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 IllnessDakheli fragment = new IllnessDakheli();
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
@@ -81,6 +83,7 @@ public class Illnesses extends Fragment {
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 IllnessOfuni fragment = new IllnessOfuni();
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
@@ -92,6 +95,7 @@ public class Illnesses extends Fragment {
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 IllnessFogh fragment = new IllnessFogh();
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
@@ -103,6 +107,7 @@ public class Illnesses extends Fragment {
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 IllnessGhalb fragment = new IllnessGhalb();
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
@@ -114,6 +119,7 @@ public class Illnesses extends Fragment {
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 IllnessNorology fragment = new IllnessNorology();
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
@@ -125,6 +131,7 @@ public class Illnesses extends Fragment {
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 IllnessCCU fragment = new IllnessCCU();
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
@@ -136,6 +143,7 @@ public class Illnesses extends Fragment {
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 IllnessICU fragment = new IllnessICU();
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }

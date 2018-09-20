@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.nazanin.hospitalapp.MainActivity;
 import com.example.nazanin.hospitalapp.R;
 
 
@@ -69,6 +70,7 @@ public class IllnessEye extends Fragment {
                         "به این صورت است که برای رسیدن به کیسه اشکی برش کوچکی در ناحیه بین چشم و بینی، روی پوست قسمت بیرونی بینی داده میشود. سپس قطعه کوچکی از استخوان بین کیسه اشکی و بینی برداشته میشود. در این مرحله، روی کیسه اشکی برش داده شده و لبه های برش به نحوی به مخاط داخلی بینی دوخته میشود که ارتباط مستقیمی بین کیسه اشکی و بینی برقرار شود. معمولا طی\n" +
                         "این عمل، یك لوله سیلیکونی نیز به طورموقت در مجرا جایگذاری میشود تا از انسداد مجدد مجرا پس از عميل جراحی جلوگیری کند. این لوله درد ندارد و برای بیمار مشکلی ایجاد نمیکند.\n");
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
@@ -145,6 +147,7 @@ public class IllnessEye extends Fragment {
                         "تکمیلی دیگر پیدا نماید. خونریزی پشت چشم که بسیار عارضه نادری است میتواند منجر به از دست رفتن دائمی\n" +
                         "بینایی گردد.\n");
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
@@ -257,6 +260,7 @@ public class IllnessEye extends Fragment {
                         " \tاگر کودک درد داشت و درد او با مصرف داروهای مسکن تجویزشده توسط پزشک برطرف نمی شد.\n" +
                         " \tاگر کودک بیش از  4ساعت، تب بالای 38 درجه داشت.\n");
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
@@ -310,14 +314,18 @@ public class IllnessEye extends Fragment {
                         "های مختلف بدون تجویز چشم پزشک جدا خودداری نمایید .\n" +
                         " تا حد ممکن از کار طولانی مدت در محیط های گرم و خشک و دارای گرد و غبار پرهیز شود.\n");
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
         });
-
-
+        showBackButton();
 
         return v;
     }
-
+    public void showBackButton() {
+        if (getActivity() instanceof MainActivity) {
+            ((MainActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+    }
 }

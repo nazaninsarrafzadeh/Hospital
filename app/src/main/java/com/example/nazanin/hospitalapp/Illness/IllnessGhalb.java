@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.nazanin.hospitalapp.MainActivity;
 import com.example.nazanin.hospitalapp.R;
 
 
@@ -92,6 +93,7 @@ public class IllnessGhalb extends Fragment {
                        " \tانجام تمرينات ورزشي با هماهنگي واحد فيزيوتراپي \n" +
                        " \tمعمولا با مراقبت هاي پزشکي و پرستاري در بخش ، عرض 10 الي 14 روز بهبود        مي يابيد. \n");
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
@@ -198,6 +200,7 @@ public class IllnessGhalb extends Fragment {
                         "•\tبیش از 5 دقیقه طول بکشد\n" +
                         "\n");
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
@@ -343,6 +346,7 @@ public class IllnessGhalb extends Fragment {
                         "\n" +
                         "\n");
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
@@ -362,6 +366,7 @@ public class IllnessGhalb extends Fragment {
                         "به حداقل دوبار فشار خون بیش از 140/90 فشار خون بالا گفته می شود.\n" +
                         "با افزایش سن احتمال بروز فشار خون بالا بیشتر می شود و در افراد بالای60 سال شیوع فشار خون بالا به 50 درصد می رسد یعنی از هر دو نفر یک نفر مبتلا به فشار خون بالاست بنابراین در طول زندگی نیاز به کنترل دقیق فشار خون می باشد.\n");
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
@@ -435,13 +440,21 @@ public class IllnessGhalb extends Fragment {
                         "•\tتوصیه می شود برای جلوگیری از عفونتهاي تنفسي از رفتن به محلهای آلوده و شلوغ و تماس با افراد عفونی خوداری کنید.\n" +
                         "•\tاول پاییز جهت پیشگیری از آنفولانزا به پزشک خود مراجعه کرده و واکسن بزنید.\n");
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
         });
 
+        showBackButton();
 
         return v;
+    }
+
+    public void showBackButton() {
+        if (getActivity() instanceof MainActivity) {
+            ((MainActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
     }
 
 }

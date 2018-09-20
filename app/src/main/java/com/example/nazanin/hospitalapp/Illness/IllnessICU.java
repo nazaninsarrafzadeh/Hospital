@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.nazanin.hospitalapp.MainActivity;
 import com.example.nazanin.hospitalapp.R;
 
 
@@ -143,6 +144,7 @@ public class IllnessICU extends Fragment {
                         "•\tبیش از 5 دقیقه طول بکشد\n" +
                         "\n");
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
@@ -156,6 +158,7 @@ public class IllnessICU extends Fragment {
                 fragment.SetTitle("تشنج");
                 fragment.SetBody("تشنج\u200C (كه\u200C حمله\u200C تشنجي\u200C يا حمله\u200C غش\u200C هم\u200C نام\u200C دارد) شامل\u200C انقباضات\u200C غيرارادي\u200C تعداد زيادي\u200C از عضلات\u200C بدن\u200C است\u200C. اين\u200C وضعيت\u200C  ناشی از تغییر ناگهانی و موقتی در عملکرد مغز است که بعلت تخلیه الکتریکی گروهی از سلولهای عصبی مغز ایجاد میشود. تخلیه الکتریکی همزمان، حمله ای و گذرای سلولهای عصبی،تغییراتی را در فعالیت ذهنی و رفتار فرد ایجاد می کند که از دوره زمانی بدون توجه تا بدون واکنش به تحریکات و انقباض پرشی عضلات متغیر است. تشنج یک بیماری نیست بلکه نشانه ای از نقایص زمینه ای، آسیب یا بیماری است.");
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
@@ -170,6 +173,7 @@ public class IllnessICU extends Fragment {
                 fragment.SetBody("سکته قلبی ( انفارکتوس میوکارد ) چیست ؟ \n" +
                         "یک وضعیت اورژانسی است و رمانی رخ می دهد که عروق کرونر ( عروقی که به قلب خون رسانی می کنند ) دچار کاهش ناگهانی یا قطع کلی جریان خون می شوند و اجازه عبور خون کافی را به عضله قلب نمی دهند در صورتی که درمان سریع برای آن انجام نگردد باعث مرگ عضله قلبی و سکته قلبی می شود . \n");
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
@@ -187,14 +191,21 @@ public class IllnessICU extends Fragment {
                         " عملکرد عصبي ناحيه آسيب ديده دچار اشکال مي شود .\n" +
                         " شدت اختلال عملکرد ، براساس ناحيه ي درگير و وسعت ان متفاوت مي باشد که اين وضعيت را اصطلاحاً سکته مغزي مي گويند . \n");
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
         });
 
-
+        showBackButton();
 
         return v;
+    }
+
+    public void showBackButton() {
+        if (getActivity() instanceof MainActivity) {
+            ((MainActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
     }
 
 }

@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.nazanin.hospitalapp.MainActivity;
 import com.example.nazanin.hospitalapp.R;
 
 
@@ -135,6 +136,7 @@ public class IllnessDakheli extends Fragment {
                         "•\tکبودی لب ها و صورت و نوک انگشتان و ضربان قلب بالا اضطراب بدلیل تنگی نفس از علائم\n" +
                         "اورژانس می باشد که نیاز فوری به درمان دارند .\n");
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
@@ -217,6 +219,7 @@ public class IllnessDakheli extends Fragment {
                         "•\tدر افرادی که مدفوع چرب دارند توصیه می شود ویتامین A و D ( روغن کنجد ، کره ، ماهی ، تخم مرغ ) و   E ( جوانه گندم ، ماهی، زیتون ) مصرف کنند.\n" +
                         "•\tرعایت بهد اشت دهان برای شما ضروری است.\n");
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
@@ -309,6 +312,7 @@ public class IllnessDakheli extends Fragment {
                         "•\tاز فعالیت بیش از حد در طی دوره بهبودی خودداری کنید و در بین فعالیت دوره هایی از استراحت داشته باشید.\n" +
                         "•\tدر تاریخ معین جهت پیگیری درمان به پزشک مراجعه کنید.\n");
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
@@ -360,6 +364,7 @@ public class IllnessDakheli extends Fragment {
                         "\uF0FC\tدر بيماراني که علائم برگشت اسيد معده به داخل مري يا بازگشت غذا از معده به مري دارند لازم است از دراز کشيدن بلافاصله پس از غذا خودداري کرده و حتي الامکان بالاتنه را در هنگام خواب در موقعيت بالاتري از پائين تنه قرار دهند يا طرف پائين تخت ايشان در سطح پائين تري نسبت به قسمت بالاي تخت ( از سطح افق) قرار داشته باشد . \n" +
                         "\uF0FC\tبه ياد داشته باشيد هر زمان براي ساير مشکلات به پزشک مراجعه کرديد سابقه خونريزي گوراشي خود راب يان کنيد . \n");
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
@@ -444,6 +449,7 @@ public class IllnessDakheli extends Fragment {
                         "•\tاز مصرف داورهای مانند آلومینیوم ام جی اس یا آلومینیوم هیدروکساید یا فرآورده های لبنی بخصوص شیر با آهن یا غذاهای حاوی آن پرهیز کنید.\n" +
                         "•\tاز نوشیدن چای، قهوه و دم کرده های گیاهی یک ساعت قبل و یک تا دو ساعت بعد از صرف غذا خودداری کنید.  \n");
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
@@ -509,14 +515,21 @@ public class IllnessDakheli extends Fragment {
                         "•\tخواب و استراحت کافی داشته باشید.\n" +
                         "•\tاگر گاستریت شما از نوع عفونی تشخیص داده شده که علت آن افزایش باکتری موجود در معده به نام هلیکوباکترپیلوری که با آندوسکوپی تشخیص داده می شود نیاز به درمان با آنتی بیوتیک دارید.\n");
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
         });
 
-
+        showBackButton();
 
         return v;
+    }
+
+    public void showBackButton() {
+        if (getActivity() instanceof MainActivity) {
+            ((MainActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
     }
 
 }

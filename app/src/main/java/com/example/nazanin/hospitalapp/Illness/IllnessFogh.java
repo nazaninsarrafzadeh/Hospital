@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.nazanin.hospitalapp.MainActivity;
 import com.example.nazanin.hospitalapp.R;
 
 
@@ -113,6 +114,7 @@ public class IllnessFogh extends Fragment {
                         "11- چاي سبز ، فلفل شيرين و انگور قرمز در درمان روماتيسم مفيدند \n" +
                         "تحقيقات نشان مي دهد که احتمال ابتلا به روماتيسم مفصلي در زناني که به کودکان خود شير مي دهند 30 تا 50 درصد کمتر مي باشد \n");
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
@@ -185,6 +187,7 @@ public class IllnessFogh extends Fragment {
                         "علائم هشدار دهنده\n" +
                         " اگر شما یا یکی از اعضای خانواده تان علائم بیماری کرون را دارید. اگر اجابت مزاج شما سیاه و قیری است یا در آن خون وجود دارد. اگر شکم شما متورم شده است. ویا تب دارید به پزشک مراجعه نمایید.\n");
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
@@ -238,6 +241,7 @@ public class IllnessFogh extends Fragment {
                         "\n" +
                         "\n");
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
@@ -265,6 +269,7 @@ public class IllnessFogh extends Fragment {
                         "•\tاکثراً در افراد چاق در سنین بالا (افراد بالای 30 سال) اتفاق می افتد.\n" +
                         "•\tمعمولا طی چندین سال به طور پنهان آغاز می شود.\n");
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
@@ -410,6 +415,7 @@ public class IllnessFogh extends Fragment {
                         "\n" +
                         "\n");
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
@@ -455,14 +461,20 @@ public class IllnessFogh extends Fragment {
                         "شدن اولیه کبد باشد و یک آزمایش خون از شما انجام دهد و این آزمایشات نشان دهنده بیماری کبد خواهد بود و گاه پزشک ممکن است از بیمار، سونوگرافی، سی تی اسکن و یا اسکن ایزوتروپ از کبد و طحال به عمل آورد. گاه پزشک جهت تأیید تشخیص، تصمیم به بیوپسی کبد از راه پوست می گیرد. گاه بطور اتفاقی در حین جراحی و یا انجام لاپاراسکوپی که طی آن از طریق یک لوله دوربین دار  داخل شکم دیده می شود، متوجه کبد فرسوده و چروکیده فرد  مبتلا به سیروز می شود.\n" +
                         "\n");
                 transaction.replace(R.id.frame_layout, fragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
 
             }
         });
-
-
+        showBackButton();
 
         return v;
+    }
+
+    public void showBackButton() {
+        if (getActivity() instanceof MainActivity) {
+            ((MainActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
     }
 
 }

@@ -66,8 +66,14 @@ public class ParaclinicDetailsFragment extends Fragment {
         strLblTitle = (TextView) v.findViewById(R.id.lblTitle);
         strLblBody.setText(GetBody());
         strLblTitle.setText(GetTitle());
-
+        showBackButton();
         return v;
+    }
+
+    public void showBackButton() {
+        if (getActivity() instanceof MainActivity) {
+            ((MainActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
     }
 
 }
