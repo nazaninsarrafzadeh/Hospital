@@ -61,7 +61,7 @@ public class ParaclinicDetailsFragment extends Fragment {
         paraclinic=new Paraclinic();
         transaction.commit();
 
-        View v= inflater.inflate(R.layout.fragment_paraclinic_details, container, false);
+        View v= inflater.inflate(R.layout.fragment_illness_info, container, false);
         strLblBody = (TextView) v.findViewById(R.id.lblBody);
         strLblTitle = (TextView) v.findViewById(R.id.lblTitle);
         strLblBody.setText(GetBody());

@@ -67,10 +67,10 @@ public class MainActivity extends AppCompatActivity{
                                 toolbar.setTitle("بیماری ها");
                                 selectedFragment = Illnesses.newInstance();
                                 break;
-                            case R.id.navigation_rig:
-                                toolbar.setTitle("تجهیزات");
-                                selectedFragment = Rigs.newInstance();
-                                break;
+//                            case R.id.navigation_rig:
+//                                toolbar.setTitle("تجهیزات");
+//                                selectedFragment = Rigs.newInstance();
+//                                break;
 
                             case R.id.navigation_paraclinic:
                                 toolbar.setTitle("پاراکلینیکی");

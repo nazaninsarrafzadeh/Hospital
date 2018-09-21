@@ -18,25 +18,21 @@
 
             <TextView
                 android:id="@+id/lblTitle"
-                android:layout_width="67dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:text=""
-                android:textColor="#fff"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/lblBody"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:lineSpacingExtra="10dp"
-                android:textColor="#fff"
-                android:layout_marginBottom="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="30dp" />
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:text="نشانگر آماده به کار  (ReadyForUseIndicator)"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:backgroundTint="@color/grünblau"/>
+
         </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ﻧﺸﺎﻧﮕﺮ ﺁﻣﺎﺩﻩ ﺑﻪ ﻛﺎﺭ (RFU)، ﺩﺭ ﺳﻤﺖ ﺭﺍﺳﺖ ﻭ ﺑﺎﻻﻯ ﺩﺳﺘﮕﺎﻩ ﻗﺮﺍﺭ ﺩﺍﺭﺩ. ﺍﻳﻦ ﻧﺸﺎﻧﮕﺮ ﺑﺎ ﺍﺳﺘﻔﺎﺩﻩ ﺍﺯ ﻋﻼﻣﺖﻫﺎﻯ ﺯﻳﺮ ﻭﺿﻌﻴﺖ ﻋﻤﻠﻜﺮﺩﻯ ﻣﺎﻧﻴﺘﻮﺭ/ﺩﻓﻴﺒﺮﻳﻼﺗﻮﺭ ﺭﺍ ﻧﺸﺎﻥ ﻣﻰﺩﻫﺪ:" />
     </LinearLayout>
 </ScrollView>

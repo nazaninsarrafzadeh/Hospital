@@ -6,9 +6,17 @@
     tools:context=".AboutUs">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_margin="20dp">
 
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lineSpacingExtra="10dp"
+            android:textSize="18dp" />
+    </RelativeLayout>
 </FrameLayout>

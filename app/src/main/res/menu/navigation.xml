@@ -17,11 +17,11 @@
         android:title="@string/title_illness"
         />
 
-    <item
-        android:id="@+id/navigation_rig"
-        android:icon="@drawable/ic_rig"
-        app:itemIconTint="@drawable/tab"
-        android:title="@string/title_rig" />
+    <!--<item-->
+        <!--android:id="@+id/navigation_rig"-->
+        <!--android:icon="@drawable/ic_rig"-->
+        <!--app:itemIconTint="@drawable/tab"-->
+        <!--android:title="@string/title_rig" />-->
 
     <item
         android:id="@+id/navigation_paraclinic"
