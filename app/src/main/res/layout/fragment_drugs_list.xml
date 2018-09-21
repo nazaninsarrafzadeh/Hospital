@@ -9,7 +9,6 @@
     android:layout_gravity="right"
     tools:context=".DrugsList">
 
-    <!-- TODO: Update blank fragment layout -->
 
     <ListView
         android:id="@+id/lvDrugs"
