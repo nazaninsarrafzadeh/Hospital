@@ -9,15 +9,21 @@
     android:layoutDirection="rtl"
     android:layout_gravity="right">
 
-    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchBar"
+        android:background="@drawable/round_screen"
+        >
+
+    </android.support.v7.widget.SearchView>
 
     <ListView
         android:id="@+id/lvDrugs2"
         android:foregroundGravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_below="@+id/searchBar"
         android:textDirection="rtl"
         android:layoutDirection="rtl"/>
 </RelativeLayout>
