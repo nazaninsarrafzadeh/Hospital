@@ -1,107 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Paraclinic"
-    android:layout_marginRight="30dp"
-    android:layout_marginLeft="30dp"
-    android:layout_marginTop="30dp"
-    android:scrollbars="none">
-    <LinearLayout
+    android:layout_gravity="center"
+    android:gravity="center">
+    <ListView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:id="@+id/paraclinic"
+        android:layout_gravity="center"
+        android:layoutDirection="rtl"
+        android:scrollbars="none">
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/navarMaghz"
-            android:textSize="17sp"
-            android:textColor="@color/white"
-            android:text="نوار مغزی"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/button_baackground"
-            android:backgroundTint="@color/toolbar"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/vep"
-            android:text="VEP"
-            android:textSize="17sp"
-            android:textColor="@color/white"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/button_baackground"
-            android:backgroundTint="@color/toolbar"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/navarAzole"
-            android:text="نوار عصب و عضله"
-            android:textSize="17sp"
-            android:textColor="@color/white"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/button_baackground"
-            android:backgroundTint="@color/toolbar"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/echo"
-            android:text="اکو"
-            android:textSize="17sp"
-            android:textColor="@color/white"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/button_baackground"
-            android:backgroundTint="@color/toolbar"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/varzesh"
-            android:text="تست ورزش"
-            android:textSize="17sp"
-            android:textColor="@color/white"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/button_baackground"
-            android:backgroundTint="@color/toolbar"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/andoskopi"
-            android:text="آندوسکوپی و کلونوسکوپی"
-            android:textSize="17sp"
-            android:textColor="@color/white"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/button_baackground"
-            android:backgroundTint="@color/toolbar"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/ercp"
-            android:text="ERCP(ای آر سی پی)"
-            android:textSize="17sp"
-            android:textColor="@color/white"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/button_baackground"
-            android:backgroundTint="@color/toolbar"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/azmayeshgah"
-            android:text="آزمایشگاه"
-            android:textSize="17sp"
-            android:textColor="@color/white"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/button_baackground"
-            android:backgroundTint="@color/toolbar"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/radiology"
-            android:text="رادیولوژی"
-            android:textSize="17sp"
-            android:textColor="@color/white"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/button_baackground"
-            android:backgroundTint="@color/toolbar"/>
-    </LinearLayout>
-</ScrollView>
+    </ListView>
+</LinearLayout>

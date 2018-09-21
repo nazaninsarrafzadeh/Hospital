@@ -4,8 +4,8 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="grünblau">#0070ae</color>
-    <color name="toolbar">#AA5074</color>
-    <color name="statusbar">#893a59</color>
+    <color name="toolbar">#2fd5de</color>
+    <color name="statusbar">#27aeb4</color>
     <color name="white">#fff</color>
 
 </resources>
