@@ -4,7 +4,11 @@ import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.SearchView;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -307,6 +311,7 @@ public class DrugsList extends Fragment {
                     "\uD83D\uDD39 ممکن است از این داروها همراه با دکستروز و انسولین ، بعنوان درمان کمکی هایپر کالمی استفاده شود.\n" +
                     "\uD83D\uDD39 استفاده روتین از این دارو حین CPR توصیه نمی شود(در بعضی موقعیت های اختصاصی مثل اسیدوز متابولیک اثبات شده با آزمایش ، هایپر کالمی و یا اوردوزهای دارویی مثل داروی ضد افسردگی سه حلقه ای بی کربنات می تواند مفید باشد.)\n"};
 
+    private SearchView searchView;
 
     public static Drugs newInstance() {
         Drugs fragment = new Drugs();
@@ -320,23 +325,36 @@ public class DrugsList extends Fragment {
     }
 
     @Override
+    public void onPrepareOptionsMenu(Menu menu) {
+        super.onPrepareOptionsMenu(menu);
+    }
+
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_drugs_list, container, false);
-        ListView lv = (ListView)v.findViewById(R.id.lvDrugs);
-     //   sortAlephabetically();
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(getContext(), R.layout.list_textview,list);
+        ListView lv = v.findViewById(R.id.lvDrugs);
+        searchView=v.findViewById(R.id.searchBar);
+        final ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(getContext(), R.layout.list_textview,list);
         lv.setAdapter(arrayAdapter);
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                arrayAdapter.getFilter().filter(newText);
+                return true;
+            }
+        });
+
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                AlertDialog.Builder mBuilder = new AlertDialog.Builder(getActivity());
-//                View mView = getLayoutInflater().inflate(R.layout.dialog,null);
-//                TextView tv = (TextView)mView.findViewById(R.id.tvTest);
-//                mBuilder.setView(mView);
-//                AlertDialog dialog = mBuilder.create();
-//                dialog.show();
+
                 Intent intent = new Intent(getContext(),dialogPage.class);
                 intent.putExtra("value", list[position]);
 

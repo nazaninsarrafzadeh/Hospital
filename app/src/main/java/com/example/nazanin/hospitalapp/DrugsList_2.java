@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.SearchView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -381,7 +382,7 @@ public class DrugsList_2 extends Fragment {
 
 
 
-
+    private SearchView searchView;
     public static Drugs newInstance() {
         Drugs fragment = new Drugs();
         return fragment;
@@ -399,9 +400,21 @@ public class DrugsList_2 extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_drugs_list_2, container, false);
         ListView lv = (ListView)v.findViewById(R.id.lvDrugs2);
-      //  sortAlephabetically();
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(getContext(),R.layout.list_textview,list);
+        searchView=v.findViewById(R.id.searchBar);
+        final ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(getContext(),R.layout.list_textview,list);
         lv.setAdapter(arrayAdapter);
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                arrayAdapter.getFilter().filter(newText);
+                return true;
+            }
+        });
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

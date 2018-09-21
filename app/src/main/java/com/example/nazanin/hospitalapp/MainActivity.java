@@ -13,7 +13,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.nazanin.hospitalapp.Illness.Illnesses;
@@ -23,7 +25,7 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 public class MainActivity extends AppCompatActivity{
 
     private Toolbar toolbar;
-    private ImageButton backButton;
+    private TextView title;
     private android.support.v4.app.FragmentManager fm;
 
     protected void attachBaseContext(Context newBase) {
@@ -36,8 +38,7 @@ public class MainActivity extends AppCompatActivity{
         setContentView(R.layout.activity_main);
         final BottomNavigationView bottomNavigationView = findViewById(R.id.navigation);
         toolbar=findViewById(R.id.home_toolbar);
-     //   backButton=findViewById(R.id.backButton);
-//        backButton.setVisibility(View.INVISIBLE);
+        title=findViewById(R.id.title);
         fm = getSupportFragmentManager();
 
         //disable app name
@@ -46,8 +47,6 @@ public class MainActivity extends AppCompatActivity{
         if (fm.getBackStackEntryCount()>0) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
-
-        toolbar.setTitle("داروها");
 
         bottomNavigationView.setOnNavigationItemSelectedListener
                 (new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -59,12 +58,12 @@ public class MainActivity extends AppCompatActivity{
                         switch (item.getItemId()) {
 
                             case R.id.navigation_drugs:
-                                toolbar.setTitle("داروها");
+                                title.setText("داروها");
                                 selectedFragment = Drugs.newInstance();
                                 break;
 
                             case R.id.navigation_illness:
-                                toolbar.setTitle("بیماری ها");
+                                title.setText("بیماری ها");
                                 selectedFragment = Illnesses.newInstance();
                                 break;
 //                            case R.id.navigation_rig:
@@ -73,23 +72,22 @@ public class MainActivity extends AppCompatActivity{
 //                                break;
 
                             case R.id.navigation_paraclinic:
-                                toolbar.setTitle("پاراکلینیکی");
+                                title.setText("پاراکلینیکی");
                                 selectedFragment= Paraclinic.newInstance();
                                 break;
                             case R.id.navigation_info:
-                                toolbar.setTitle("درباره ما");
+                                title.setText("درباره ما");
                                 selectedFragment = AboutUs.newInstance();
                                 break;
                         }
                         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                         transaction.replace(R.id.frame_layout, selectedFragment);
-                      //  transaction.addToBackStack(null);
                         transaction.commit();
                         return true;
                     }
                 });
 
-
+        title.setText("داروها");
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.frame_layout, Drugs.newInstance());
         transaction.commit();

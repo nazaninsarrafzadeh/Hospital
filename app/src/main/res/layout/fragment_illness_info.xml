@@ -24,7 +24,6 @@
                 android:id="@+id/lblTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="آنژین صدری چیست؟"
                 android:layout_alignParentRight="true"
                 android:textColor="@color/statusbar"
                 android:textSize="18sp"
