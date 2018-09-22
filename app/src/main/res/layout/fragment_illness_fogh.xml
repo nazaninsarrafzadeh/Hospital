@@ -1,101 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frameLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Illness.Illnesses"
-    android:gravity="center_horizontal"
-    android:orientation="vertical"
-    android:layout_marginRight="30dp"
-    android:layout_marginLeft="30dp"
-    android:layout_marginTop="30dp"
-    >
+    android:layout_gravity="center"
+    android:gravity="center">
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listFogh"
+        android:layout_gravity="center"
+        android:layoutDirection="rtl"
+        android:scrollbars="none">
 
-
-    <Button
-        android:id="@+id/btn_artrit"
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:alpha="0.5"
-        android:background="@android:color/holo_blue_dark"
-        android:text="آرتریت روماتوئید"
-        android:textColor="@android:color/background_light"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btn_kron"
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:alpha="0.5"
-        android:background="@android:color/holo_blue_dark"
-        android:text="کرون"
-        android:textColor="@android:color/background_light"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_artrit" />
-
-    <Button
-        android:id="@+id/btn_khunriziGovareshi"
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:alpha="0.5"
-        android:background="@android:color/holo_blue_dark"
-        android:text="خونریزی گوارشی"
-        android:textColor="@android:color/background_light"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_kron" />
-
-    <Button
-        android:id="@+id/btn_diabet"
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:alpha="0.5"
-        android:background="@android:color/holo_blue_dark"
-        android:text="دیابت"
-        android:textColor="@android:color/background_light"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_khunriziGovareshi" />
-
-    <Button
-        android:id="@+id/btn_sekteGhalbiFogh"
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:alpha="0.5"
-        android:background="@android:color/holo_blue_dark"
-        android:text="سکته قلبی"
-        android:textColor="@android:color/background_light"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_diabet" />
-
-    <Button
-        android:id="@+id/btn_siruz"
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:alpha="0.5"
-        android:background="@android:color/holo_blue_dark"
-        android:text="سیروز کبدی"
-        android:textColor="@android:color/background_light"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_sekteGhalbiFogh" />
-
+    </ListView>
 </LinearLayout>

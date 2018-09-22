@@ -1,87 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frameLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Illness.Illnesses"
-    android:gravity="center_horizontal"
-    android:orientation="vertical"
-    android:layout_marginRight="30dp"
-    android:layout_marginLeft="30dp"
-    android:layout_marginTop="30dp"
-    >
+    android:layout_gravity="center"
+    android:gravity="center">
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listGhalb"
+        android:layout_gravity="center"
+        android:layoutDirection="rtl"
+        android:scrollbars="none">
 
-
-    <Button
-        android:id="@+id/btn_ambuli"
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:alpha="0.5"
-        android:background="@android:color/holo_blue_dark"
-        android:text="آمبولی ریه"
-        android:textColor="@android:color/background_light"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btn_anjinGhalb"
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:alpha="0.5"
-        android:background="@android:color/holo_blue_dark"
-        android:text="آنژین صدری"
-        android:textColor="@android:color/background_light"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_ambuli" />
-
-    <Button
-        android:id="@+id/btn_SekteGhalbiGhalb"
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:alpha="0.5"
-        android:background="@android:color/holo_blue_dark"
-        android:text="سکته قلبی"
-        android:textColor="@android:color/background_light"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_anjinGhalb" />
-
-    <Button
-        android:id="@+id/btn_fesharKhunGhalb"
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:alpha="0.5"
-        android:background="@android:color/holo_blue_dark"
-        android:text="فشار خون"
-        android:textColor="@android:color/background_light"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_SekteGhalbiGhalb" />
-
-    <Button
-        android:id="@+id/btn_narasiiGhalbi"
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:alpha="0.5"
-        android:background="@android:color/holo_blue_dark"
-        android:text="نارسایی قلبی"
-        android:textColor="@android:color/background_light"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_fesharKhunGhalb" />
-
+    </ListView>
 </LinearLayout>
