@@ -33,6 +33,7 @@ public class RadiologyFragment extends Fragment implements View.OnClickListener 
         sono=view.findViewById(R.id.btnSono);
         Ct.setOnClickListener(this);
         sono.setOnClickListener(this);
+        showBackButton();
         return view;
     }
 
@@ -102,7 +103,7 @@ public class RadiologyFragment extends Fragment implements View.OnClickListener 
                 transactionCt.commit();
                 break;
         }
-        showBackButton();
+
 
     }
     public void showBackButton() {

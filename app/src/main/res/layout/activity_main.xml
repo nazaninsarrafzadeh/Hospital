@@ -27,19 +27,6 @@
                 android:layout_alignParentRight="true"
                 />
 
-            <!--<EditText-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:id="@+id/searchBar"-->
-                <!--android:layout_toLeftOf="@+id/title"-->
-                <!--android:layout_marginRight="20dp"-->
-                <!--android:hint="جستجو"-->
-                <!--android:drawableTint="#55000000"-->
-                <!--android:backgroundTint="@android:color/transparent"-->
-                <!--android:visibility="invisible"-->
-                <!--android:cursorVisible="false"-->
-                <!--android:drawableRight="@drawable/ic_search_black_24dp"-->
-                <!--/>-->
             </RelativeLayout>
         </android.support.v7.widget.Toolbar>
 
