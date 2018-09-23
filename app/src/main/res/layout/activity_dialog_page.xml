@@ -8,6 +8,7 @@
     tools:context=".dialogPage"
     android:gravity="center_horizontal"
 
+
     >
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,7 +23,7 @@
             android:layout_marginTop="20dp"
             android:text="DrugsName"
             android:textAlignment="center"
-            android:textSize="16sp"
+            android:textSize="19sp"
             android:textStyle="bold" />
 
         <RelativeLayout
@@ -46,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:text="دسته دارو:"
-                android:textSize="15sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -59,7 +60,8 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textSize="15sp" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -72,7 +74,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:text="شکل:"
-                android:textSize="15sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -85,7 +87,8 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textSize="15sp" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -98,7 +101,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:text="آنتی دوت:"
-                android:textSize="15sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -111,7 +114,8 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textSize="15sp" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -124,7 +128,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:text="مکانیسم اثر:"
-                android:textSize="15sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -137,7 +141,8 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textSize="15sp" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -150,7 +155,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:text="اندیکاسیون:"
-                android:textSize="15sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -163,7 +168,8 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textSize="15sp" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -176,7 +182,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:text="دوز مصرفی:"
-                android:textSize="15sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -189,7 +195,8 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textSize="15sp" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -202,7 +209,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:text="کنتراندیکاسیون:"
-                android:textSize="15sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -215,7 +222,8 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textSize="15sp" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -228,7 +236,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:text="عوارض جانبی:"
-                android:textSize="15sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -241,7 +249,8 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textSize="15sp" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -254,7 +263,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:text="اقدامات پرستاری:"
-                android:textSize="15sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -267,7 +276,8 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:text="Text view " />
+                android:text="Text view "
+                android:textSize="15sp" />
         </RelativeLayout>
 
     </LinearLayout>

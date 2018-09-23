@@ -102,5 +102,12 @@ public class RadiologyFragment extends Fragment implements View.OnClickListener 
                 transactionCt.commit();
                 break;
         }
+        showBackButton();
+
+    }
+    public void showBackButton() {
+        if (getActivity() instanceof MainActivity) {
+            ((MainActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
     }
 }

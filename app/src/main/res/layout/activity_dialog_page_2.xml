@@ -8,6 +8,7 @@
     android:background="@drawable/round_screen"
     android:gravity="center_horizontal"
 
+
     >
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,7 +23,7 @@
             android:layout_marginTop="20dp"
             android:text="DrugsName"
             android:textAlignment="center"
-            android:textSize="16sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <RelativeLayout
@@ -46,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:text="شکل دارو:"
-                android:textSize="15sp"
+                android:textSize="17sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -59,7 +60,8 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textSize="15sp" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -72,7 +74,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:text="شایع در بخش:"
-                android:textSize="15sp"
+                android:textSize="17sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -85,7 +87,8 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textSize="15sp" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -98,7 +101,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:text="نحوه اثر دارو:"
-                android:textSize="15sp"
+                android:textSize="17sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -111,7 +114,8 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textSize="15sp" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -124,7 +128,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:text="زمان مصرف دارو:"
-                android:textSize="15sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -137,7 +141,8 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textSize="15sp" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -150,7 +155,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:text="نکات خاص هنگام مصرف دارو:"
-                android:textSize="15sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -163,7 +168,8 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textSize="15sp" />
         </RelativeLayout>
 
     </LinearLayout>
