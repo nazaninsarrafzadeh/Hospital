@@ -23,7 +23,7 @@ public class ZollHeadersFragment extends Fragment {
     private String[] listHeaders={"نکات ایمنی","معرفی کلیدها","دفیبریلاستیون","پیس میکروفونت","مانیتورینگ","نگهداری","باطری"};
 
     public ZollHeadersFragment() {
-        // Required empty public constructor
+        // Required empty public constructorE0F7FA
     }
 
 
