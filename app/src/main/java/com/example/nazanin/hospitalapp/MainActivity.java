@@ -80,6 +80,12 @@ public class MainActivity extends AppCompatActivity{
                                 title.setText("پاراکلینیکی");
                                 selectedFragment= Paraclinic.newInstance();
                                 break;
+
+                            case R.id.navigation_questions:
+                                title.setText("سوالات اعتبار بخشی");
+                                selectedFragment= Questions.newInstance();
+                                break;
+
                             case R.id.navigation_info:
                                 title.setText("درباره ما");
                                 selectedFragment = AboutUs.newInstance();

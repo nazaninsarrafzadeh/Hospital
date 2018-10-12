@@ -30,6 +30,12 @@
         android:title="@string/title_paraclinic" />
 
     <item
+        android:id="@+id/navigation_questions"
+        android:icon="@drawable/ic_question"
+        app:itemIconTint="@drawable/tab"
+        android:title="سوالات اعتبار بخشی" />
+
+    <item
         android:id="@+id/navigation_info"
         android:icon="@drawable/ic_infoabtus"
         app:itemIconTint="@drawable/tab"
