@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Hospital</string>
+    <string name="app_name">پرستار دانا</string>
     <string name="title_drugs">دارو ها</string>
     <string name="title_illness">بیماری ها</string>
     <string name="title_rig">تجهیزات</string>
