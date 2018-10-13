@@ -33,7 +33,7 @@
         android:id="@+id/navigation_questions"
         android:icon="@drawable/ic_question"
         app:itemIconTint="@drawable/tab"
-        android:title="سوالات اعتبار بخشی" />
+        android:title="سوالات" />
 
     <item
         android:id="@+id/navigation_info"
