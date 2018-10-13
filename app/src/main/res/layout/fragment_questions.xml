@@ -3,22 +3,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:scrollbarSize="1dp"
     tools:context=".AboutUs">
 
     <!-- TODO: Update blank fragment layout -->
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         android:layout_margin="20dp">
 
         <TextView
-            android:id="@+id/textQuestions"
+            android:id="@+id/textQuestionsFirst"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:lineSpacingExtra="10dp"
             android:textSize="17dp"
+            android:text="sdfghj
+fgthjhhjhhgf
+fgthyjhgf"
             android:textColor="@color/statusbar"/>
-    </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hands"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            android:id="@+id/hands"/>
+
+        <TextView
+            android:id="@+id/textQuestionslast"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lineSpacingExtra="10dp"
+            android:layout_marginTop="20dp"
+            android:textSize="17dp"
+            android:textColor="@color/statusbar"/>
+    </LinearLayout>
 
 
 
